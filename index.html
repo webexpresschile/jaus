@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="tailwind.config.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-body selection:bg-primary selection:text-white">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
+<div class="flex items-center justify-between px-8 py-5 max-w-full">
+<div class="font-manrope font-black tracking-tighter text-2xl text-slate-100 uppercase">ARCHITECT</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-manrope tracking-tight text-sm font-medium text-blue-500 border-b-2 border-blue-500 pb-1" href="#">Trabajo</a>
+<a class="font-manrope tracking-tight text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors" href="#">Servicios</a>
+<a class="font-manrope tracking-tight text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors" href="#">Estudio</a>
+<a class="font-manrope tracking-tight text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors" href="#">Blog</a>
+</div>
+<button class="signature-gradient text-white px-8 py-3 rounded-full font-manrope font-bold text-sm hover:opacity-80 transition-all duration-300 active:scale-95">
+                Comenzar
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col justify-center px-8 pt-32 pb-20 overflow-hidden bg-slate-950">
+<!-- Background Glows -->
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[800px] h-[800px] bg-primary/20 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-[600px] h-[600px] bg-blue-900/10 rounded-full blur-[100px]"></div>
+<div class="max-w-7xl mx-auto w-full grid md:grid-cols-12 gap-12 items-center relative z-10">
+<div class="md:col-span-7">
+<span class="text-primary font-headline font-bold text-sm tracking-widest uppercase mb-6 block">Ingeniería Web Premium</span>
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[1.05] text-slate-50 mb-8">
+                        Sitios web que <span class="text-transparent bg-clip-text signature-gradient">convierten</span>, en semanas.
+                    </h1>
+<p class="text-slate-400 text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
+                        Experiencias digitales de alto rendimiento. Combinamos precisión arquitectónica con psicología de marketing de alta conversión.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="signature-gradient text-white px-10 py-5 rounded-full font-headline font-bold text-lg shadow-xl shadow-primary/20 hover:scale-[1.02] transition-transform active:scale-95">
+                            Obtener presupuesto
+                        </button>
+<button class="bg-slate-900 text-slate-100 px-10 py-5 rounded-full font-headline font-bold text-lg hover:bg-slate-800 transition-colors active:scale-95">
+                            Ver nuestro trabajo
+                        </button>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-square bg-slate-900 rounded-xl relative overflow-hidden group">
+<img alt="Modern architectural structure" class="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Abstract architectural lines in a dark sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcqVf12LVWPr0qWHxrhJkbC3LlYR9oJoqqVoLkTat2UPNjy3nZ2RVP0x8JTbYDWD80T9cyQiemYqzrIZMOobDLXJ6agh_ZXvCi_Pj5_TfMbufIvrkv44ybgqCYcZ5gqx8RIUWQqL3jBK1WFJaRYlyHm9bNpqIZ4x2vI-X1EHgsz1fJsUR6IssQv0EFfX3VKArN2GZbIeeV1swX8Oisom4dtpe0W9W2rJab5oMHkb5LwiKL9xWkgO9NQMGXXxAOKwCQMUlF7CDVb_o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+</div>
+<!-- Floating Stat Card -->
+<div class="absolute -bottom-6 -left-6 bg-slate-900/90 backdrop-blur-md p-6 rounded-xl border border-slate-800/50 shadow-2xl">
+<div class="text-primary font-headline font-black text-3xl mb-1">99.9%</div>
+<div class="text-slate-400 text-xs font-bold uppercase tracking-wider">Puntaje de Rendimiento</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Projects Section -->
+<section class="pt-24 pb-32 bg-slate-900 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 md:flex md:items-end md:justify-between">
+<div>
+<span class="text-primary font-headline font-bold text-sm tracking-widest uppercase mb-4 block">Trabajos Destacados</span>
+<h2 class="font-headline font-bold text-4xl md:text-5xl text-slate-50">Nuestros Proyectos.</h2>
+</div>
+<button class="mt-6 md:mt-0 text-slate-300 font-headline font-bold hover:text-white transition-colors flex items-center group">
+    Ver todos
+    <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+
+<div class="grid md:grid-cols-2 gap-8 md:gap-12">
+<!-- Project 1 -->
+<div class="group relative overflow-hidden rounded-2xl bg-slate-950 border border-slate-800/50 aspect-[4/3] md:aspect-[5/4] shadow-2xl">
+    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Villa Nova" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
+    <div class="absolute bottom-0 left-0 p-8 w-full translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+        <span class="text-primary font-headline font-bold text-xs tracking-widest uppercase mb-2 block">Residencial</span>
+        <h3 class="font-headline font-bold text-2xl text-slate-50 mb-2">Concepto Villa Nova</h3>
+        <p class="text-slate-400 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Estructura residencial minimalista que optimiza la luz natural y los materiales sustentables.</p>
+    </div>
+</div>
+<!-- Project 2 -->
+<div class="group relative overflow-hidden rounded-2xl bg-slate-950 border border-slate-800/50 aspect-[4/3] md:aspect-[5/4] md:translate-y-16 shadow-2xl">
+    <img src="https://images.unsplash.com/photo-1510627498534-cf7e9140417a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Lumina HQ" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
+    <div class="absolute bottom-0 left-0 p-8 w-full translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+        <span class="text-primary font-headline font-bold text-xs tracking-widest uppercase mb-2 block">Comercial</span>
+        <h3 class="font-headline font-bold text-2xl text-slate-50 mb-2">Oficinas Lumina</h3>
+        <p class="text-slate-400 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Sede corporativa diseñada para fomentar el trabajo colaborativo y la eficiencia energética.</p>
+    </div>
+</div>
+<!-- Project 3 -->
+<div class="group relative overflow-hidden rounded-2xl bg-slate-950 border border-slate-800/50 aspect-[4/3] md:aspect-[5/4] shadow-2xl">
+    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Innovation Hub" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
+    <div class="absolute bottom-0 left-0 p-8 w-full translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+        <span class="text-primary font-headline font-bold text-xs tracking-widest uppercase mb-2 block">Espacio Público</span>
+        <h3 class="font-headline font-bold text-2xl text-slate-50 mb-2">Centro de Innovación</h3>
+        <p class="text-slate-400 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Una estructura de uso múltiple que combina curvas orgánicas con elementos de concreto brutalista.</p>
+    </div>
+</div>
+<!-- Project 4 -->
+<div class="group relative overflow-hidden rounded-2xl bg-slate-950 border border-slate-800/50 aspect-[4/3] md:aspect-[5/4] md:translate-y-16 shadow-2xl">
+    <img src="https://images.unsplash.com/photo-1541888049750-608a0afad8e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Alpine Retreat" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
+    <div class="absolute bottom-0 left-0 p-8 w-full translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+        <span class="text-primary font-headline font-bold text-xs tracking-widest uppercase mb-2 block">Hospitalidad</span>
+        <h3 class="font-headline font-bold text-2xl text-slate-50 mb-2">Refugio Alpino</h3>
+        <p class="text-slate-400 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Resort boutique integrado perfectamente con su dramático entorno montañoso.</p>
+    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trusted By -->
+<section class="py-12 bg-slate-950 border-y border-slate-900">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-12 grayscale opacity-40">
+<span class="font-headline font-bold text-sm text-slate-500 uppercase tracking-[0.2em] md:mb-0 mb-4">Líderes que confían en nosotros</span>
+<div class="flex flex-wrap justify-center gap-12 md:gap-20 items-center">
+<span class="font-headline font-extrabold text-2xl tracking-tighter text-slate-100">Tech-O</span>
+<span class="font-headline font-extrabold text-2xl tracking-tighter text-slate-100 italic">Lumina</span>
+<span class="font-headline font-extrabold text-2xl tracking-tighter text-slate-100">Venture</span>
+<span class="font-headline font-extrabold text-2xl tracking-tighter text-slate-100 opacity-50">Pulse</span>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-slate-950 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 text-center md:text-left">
+<span class="text-primary font-headline font-bold text-sm tracking-widest uppercase mb-4 block">Nuestra Experiencia</span>
+<h2 class="font-headline font-bold text-4xl md:text-5xl text-slate-50">Servicios diseñados con precisión.</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="bg-slate-900/50 p-10 rounded-xl border border-slate-800/30 hover:bg-slate-900 transition-colors group">
+<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="web">web</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-slate-100 mb-4">Landing Pages</h3>
+<p class="text-slate-400 mb-8 leading-relaxed">Páginas optimizadas para la conversión, diseñadas para convertir visitantes en clientes mediante storytelling estratégico.</p>
+<ul class="space-y-3">
+<li class="flex items-center text-sm text-slate-300">
+<span class="material-symbols-outlined text-xs text-primary mr-2" data-icon="check_circle">check_circle</span>
+                                Listas para Pruebas A/B
+                            </li>
+<li class="flex items-center text-sm text-slate-300">
+<span class="material-symbols-outlined text-xs text-primary mr-2" data-icon="check_circle">check_circle</span>
+                                Tiempos de Carga &lt;0.5s
+                            </li>
+</ul>
+</div>
+<!-- Service 2 -->
+<div class="bg-slate-900/50 p-10 rounded-xl border border-slate-800/30 hover:bg-slate-900 transition-colors group">
+<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="corporate_fare">corporate_fare</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-slate-100 mb-4">Sitios Corporativos</h3>
+<p class="text-slate-400 mb-8 leading-relaxed">Establecemos tu autoridad digital con arquitecturas escalables y robustas que crecen con tu empresa.</p>
+<ul class="space-y-3">
+<li class="flex items-center text-sm text-slate-300">
+<span class="material-symbols-outlined text-xs text-primary mr-2" data-icon="check_circle">check_circle</span>
+                                Integración CMS
+                            </li>
+<li class="flex items-center text-sm text-slate-300">
+<span class="material-symbols-outlined text-xs text-primary mr-2" data-icon="check_circle">check_circle</span>
+                                Soporte Multilingüe
+                            </li>
+</ul>
+</div>
+<!-- Service 3 -->
+<div class="bg-slate-900/50 p-10 rounded-xl border border-slate-800/30 hover:bg-slate-900 transition-colors group">
+<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="palette">palette</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-slate-100 mb-4">Branding</h3>
+<p class="text-slate-400 mb-8 leading-relaxed">Identidades visuales que resuenan. Definimos la voz de tu marca, sistemas de color y estética digital.</p>
+<ul class="space-y-3">
+<li class="flex items-center text-sm text-slate-300">
+<span class="material-symbols-outlined text-xs text-primary mr-2" data-icon="check_circle">check_circle</span>
+                                Diseño de Identidad
+                            </li>
+<li class="flex items-center text-sm text-slate-300">
+<span class="material-symbols-outlined text-xs text-primary mr-2" data-icon="check_circle">check_circle</span>
+                                Animación Interfaz
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us (4-column layout) -->
+<section class="py-24 bg-slate-900 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<div>
+<span class="text-primary font-bold text-3xl mb-4 block">01</span>
+<h4 class="font-headline font-bold text-xl text-slate-100 mb-3">Entrega Rápida</h4>
+<p class="text-slate-400 text-sm leading-relaxed">Lanzamientos en 3-5 semanas sin comprometer la integridad de la arquitectura.</p>
+</div>
+<div>
+<span class="text-primary font-bold text-3xl mb-4 block">02</span>
+<h4 class="font-headline font-bold text-xl text-slate-100 mb-3">Enfoque a Conversión</h4>
+<p class="text-slate-400 text-sm leading-relaxed">Cada píxel se posiciona con el propósito de guiar a los usuarios hacia la acción.</p>
+</div>
+<div>
+<span class="text-primary font-bold text-3xl mb-4 block">03</span>
+<h4 class="font-headline font-bold text-xl text-slate-100 mb-3">Precios Transparentes</h4>
+<p class="text-slate-400 text-sm leading-relaxed">Tarifas fijas. Sin cargos ocultos. Claridad desde la propuesta hasta el final.</p>
+</div>
+<div>
+<span class="text-primary font-bold text-3xl mb-4 block">04</span>
+<h4 class="font-headline font-bold text-xl text-slate-100 mb-3">Excelencia Global</h4>
+<p class="text-slate-400 text-sm leading-relaxed">Infraestructura preparada y optimizada para cumplir los estándares internacionales.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-24 bg-slate-950 px-8 relative">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20">
+<h2 class="font-headline font-bold text-4xl md:text-5xl text-slate-50 text-center">Nuestro Proceso</h2>
+</div>
+<div class="relative flex flex-col md:flex-row justify-between items-start gap-12">
+<!-- Step 1 -->
+<div class="relative z-10 flex-1">
+<div class="mb-6 flex items-center">
+<div class="w-12 h-12 bg-slate-800 text-slate-100 rounded-full flex items-center justify-center font-headline font-bold text-lg border border-slate-700">1</div>
+<div class="hidden md:block flex-1 h-[1px] bg-slate-800 ml-4"></div>
+</div>
+<h3 class="font-headline font-bold text-xl text-slate-100 mb-3">Descubrimiento</h3>
+<p class="text-slate-400 text-sm">Exploración profunda de tus metas de negocio, audiencia y panorama del mercado.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 flex-1">
+<div class="mb-6 flex items-center">
+<div class="w-12 h-12 bg-slate-800 text-slate-100 rounded-full flex items-center justify-center font-headline font-bold text-lg border border-slate-700">2</div>
+<div class="hidden md:block flex-1 h-[1px] bg-slate-800 ml-4"></div>
+</div>
+<h3 class="font-headline font-bold text-xl text-slate-100 mb-3">Diseño</h3>
+<p class="text-slate-400 text-sm">Creación de prototipos de alta fidelidad centrados en la experiencia de usuario y la esencia de la marca.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 flex-1">
+<div class="mb-6 flex items-center">
+<div class="w-12 h-12 bg-slate-800 text-slate-100 rounded-full flex items-center justify-center font-headline font-bold text-lg border border-slate-700">3</div>
+<div class="hidden md:block flex-1 h-[1px] bg-slate-800 ml-4"></div>
+</div>
+<h3 class="font-headline font-bold text-xl text-slate-100 mb-3">Desarrollo</h3>
+<p class="text-slate-400 text-sm">Código limpio y de alto rendimiento impulsado por la tecnología moderna.</p>
+</div>
+<!-- Step 4 -->
+<div class="relative z-10 flex-1">
+<div class="mb-6 flex items-center">
+<div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-headline font-bold text-lg border border-primary-container shadow-lg shadow-primary/20">4</div>
+</div>
+<h3 class="font-headline font-bold text-xl text-slate-100 mb-3">Lanzamiento</h3>
+<p class="text-slate-400 text-sm">Optimización SEO, despliegue al servidor, monitorización y entrega final.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-24 bg-slate-900 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center">
+<h2 class="font-headline font-bold text-4xl md:text-5xl text-slate-50 mb-4">Inversión</h2>
+<p class="text-slate-400">Precios predecibles para resultados profesionales.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Plan 1 -->
+<div class="bg-slate-950 p-10 rounded-xl border border-slate-800 flex flex-col h-full">
+<div class="mb-8">
+<h3 class="text-slate-300 font-headline font-bold text-lg mb-2">Landing Page</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-slate-400 text-xl font-headline">desde</span>
+<span class="text-slate-50 text-4xl font-headline font-black">$600</span>
+</div>
+</div>
+<p class="text-slate-400 text-sm mb-8">Perfecto para lanzamientos de productos y obtención de leads valiosos.</p>
+<ul class="space-y-4 mb-10 flex-1">
+<li class="flex items-center text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-sm mr-2" data-icon="done">done</span> Diseño de Página Única</li>
+<li class="flex items-center text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-sm mr-2" data-icon="done">done</span> Optimización Móvil Total</li>
+<li class="flex items-center text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-sm mr-2" data-icon="done">done</span> Configuración Analytics</li>
+</ul>
+<button class="w-full py-4 border border-slate-800 rounded-full text-slate-200 font-headline font-bold hover:bg-slate-800 transition-colors">Iniciar Proyecto</button>
+</div>
+<!-- Plan 2 (Featured) -->
+<div class="bg-slate-950 p-10 rounded-xl border-2 border-primary flex flex-col h-full relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold px-4 py-1 uppercase tracking-widest rounded-bl-lg">Popular</div>
+<div class="mb-8">
+<h3 class="text-slate-100 font-headline font-bold text-lg mb-2">Sitio Corporativo</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-slate-400 text-xl font-headline">desde</span>
+<span class="text-slate-50 text-4xl font-headline font-black">$1,800</span>
+</div>
+</div>
+<p class="text-slate-400 text-sm mb-8">Presencia digital imponente y completa para empresas establecidas.</p>
+<ul class="space-y-4 mb-10 flex-1">
+<li class="flex items-center text-sm text-slate-300"><span class="material-symbols-outlined text-primary text-sm mr-2" data-icon="done">done</span> Hasta 10 Páginas Interiores</li>
+<li class="flex items-center text-sm text-slate-300"><span class="material-symbols-outlined text-primary text-sm mr-2" data-icon="done">done</span> Gestor de Contenido (CMS)</li>
+<li class="flex items-center text-sm text-slate-300"><span class="material-symbols-outlined text-primary text-sm mr-2" data-icon="done">done</span> Diseño e Ilustraciones Premium</li>
+<li class="flex items-center text-sm text-slate-300"><span class="material-symbols-outlined text-primary text-sm mr-2" data-icon="done">done</span> Estrategia Inicial de SEO</li>
+</ul>
+<button class="w-full py-4 signature-gradient text-white rounded-full font-headline font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform">Comenzar Ahora</button>
+</div>
+<!-- Plan 3 -->
+<div class="bg-slate-950 p-10 rounded-xl border border-slate-800 flex flex-col h-full">
+<div class="mb-8">
+<h3 class="text-slate-300 font-headline font-bold text-lg mb-2">Mantenimiento</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-slate-50 text-4xl font-headline font-black">$80</span>
+<span class="text-slate-400 text-lg font-headline">/mes</span>
+</div>
+</div>
+<p class="text-slate-400 text-sm mb-8">Protección y actualizaciones para mantener tu sitio siempre funcionando.</p>
+<ul class="space-y-4 mb-10 flex-1">
+<li class="flex items-center text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-sm mr-2" data-icon="done">done</span> Actualizaciones de Seguridad</li>
+<li class="flex items-center text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-sm mr-2" data-icon="done">done</span> Alojamiento Rápido</li>
+<li class="flex items-center text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-sm mr-2" data-icon="done">done</span> Soporte Técnico Prioritario</li>
+</ul>
+<button class="w-full py-4 border border-slate-800 rounded-full text-slate-200 font-headline font-bold hover:bg-slate-800 transition-colors">Suscribirse</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Risk-Free Launch -->
+<section class="py-24 bg-slate-950 px-8">
+<div class="max-w-4xl mx-auto bg-slate-900/50 p-12 rounded-2xl border border-slate-800/50 text-center relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
+<span class="material-symbols-outlined text-6xl text-primary mb-6" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<h2 class="font-headline font-bold text-3xl text-slate-100 mb-6">Lanzamiento Sin Riesgo</h2>
+<p class="text-slate-400 text-lg leading-relaxed mb-0">
+                    Confiamos plenamente en nuestro trabajo. Cada proyecto incluye <span class="text-slate-100 font-bold">30 días de soporte técnico gratuito</span> posterior al lanzamiento para garantizar una transición fluida y verificar el funcionamiento óptimo.
+                </p>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32 bg-slate-950 px-8 relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,#1e293b_0%,transparent_70%)] opacity-30"></div>
+<div class="max-w-5xl mx-auto text-center relative z-10">
+<h2 class="font-headline font-extrabold text-5xl md:text-7xl tracking-tighter text-slate-50 mb-10">Construyamos tu sitio.</h2>
+<button class="signature-gradient text-white px-12 py-6 rounded-full font-headline font-extrabold text-xl shadow-2xl shadow-primary/30 hover:scale-105 transition-transform active:scale-95">
+                    Solicitar mi diseño
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 border-t border-slate-800/50 w-full py-12 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col gap-2">
+<div class="font-manrope font-bold text-slate-100 text-xl tracking-tighter uppercase">ARCHITECT</div>
+<p class="font-inter text-xs tracking-wide uppercase text-slate-500">© 2024 Digital Architect Studio. Todos los derechos reservados.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-inter text-xs tracking-wide uppercase text-slate-500 hover:text-slate-200 transition-colors" href="#">Política de Privacidad</a>
+<a class="font-inter text-xs tracking-wide uppercase text-slate-500 hover:text-slate-200 transition-colors" href="#">Términos de Servicio</a>
+<a class="font-inter text-xs tracking-wide uppercase text-slate-500 hover:text-slate-200 transition-colors" href="#">LinkedIn</a>
+<a class="font-inter text-xs tracking-wide uppercase text-slate-500 hover:text-slate-200 transition-colors" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+</body></html>
